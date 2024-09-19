@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="shreya.css">
+</head>
+<body>
+    <div class="full-img" id="fullimgbox">
+        <img src="b.jpg" id="fullimg" >
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="b.jpg" onclick="openfullimg(this.src)">
+        <img src="c.jpg" onclick="openfullimg(this.src)">
+        <img src="a.jpg" onclick="openfullimg(this.src)">
+        <img src="d.jpg" onclick="openfullimg(this.src)">
+        <img src="e.jpg" onclick="openfullimg(this.src)">
+        <img src="f.jpg" onclick="openfullimg(this.src)">
+        <img src="n.jpg" onclick="openfullimg(this.src)">
+        <img src="g.jpg" onclick="openfullimg(this.src)">
+        
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openfullimg(pic){
+
+            fullimgbox.style.display ="flex";
+            fullimg.src = pic;
+        }
+        function closefullimg(){
+            fullimgbox.style.display ="none";
+
+        }
+
+
+    </script>
+</body>
+</html>
